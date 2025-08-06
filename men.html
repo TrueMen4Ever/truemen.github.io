@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>TrueMen</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/hero-bg.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <!--<div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>--><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">TrueMen</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html#hero" class="active">Home<br></a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li class="dropdown"><a href="index.html#services"><span>Services</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="men.html">True Men</a></li>
+                <li><a href="faith.html">Faith</a></li>
+                <li><a href="discipline.html">Discipline</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#departments">Role Models</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="cta-btn d-none d-sm-block" href="https://www.paypal.com/donate?business=kimhalili99%40gmail.com" target="_blank">Donate</a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>True Men</h1>
+              <p class="mb-0">This is a place where you can learn about true manhood.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--<nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">True Men</li>
+          </ol>
+        </div>
+      </nav>-->
+    </div><!-- End Page Title -->
+
+    <!-- Starter Section Section -->
+
+    <!-- Section Title -->
+
+    <div class="container" data-aos="fade-up">
+      <!-- Filter Buttons -->
+      <section id="post-gallery" class="gallery section">
+
+        <!-- Filter Buttons -->
+        <div class="text-center mb-4" id="filterButtons">
+          <button class="btn btn-outline-primary active" onclick="filterSelection('all')">All</button>
+          <button class="btn btn-outline-primary" onclick="filterSelection('goats')">GOATs</button>
+          <button class="btn btn-outline-primary" onclick="filterSelection('contemporary')">Contemporary</button>
+          <button class="btn btn-outline-primary" onclick="filterSelection('classical')">Classical</button>
+          <button class="btn btn-outline-primary" onclick="filterSelection('other')">Other</button>
+          <button class="btn btn-outline-primary" onclick="filterSelection('women')">Great Women</button>
+        </div>
+
+        <!-- Posts Grid -->
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4" id="filterItems">
+
+            <!-- GOATs -->
+            <div class="col-lg-3 col-md-4 filterDiv goats">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postMuhammad" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Prophet Muhammad (ﷺ)</h5>
+                  <p class="small mb-0">The perfect example of mercy, strength, and leadership.</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 filterDiv goats">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postIsa" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Jesus (Isa عليه السلام)</h5>
+                  <p class="small mb-0">A man of purity, humility, and deep connection to God.</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 filterDiv goats">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postMusa" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Moses (Musa عليه السلام)</h5>
+                  <p class="small mb-0">Led his people with unmatched courage and resilience.</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 filterDiv goats">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postIbrahim" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Abraham (Ibrahim عليه السلام)</h5>
+                  <p class="small mb-0">The symbol of unwavering faith and submission to God.</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 filterDiv goats">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postNuh" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Noah (Nuh عليه السلام)</h5>
+                  <p class="small mb-0">A model of patience, trust, and determination.</p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Contemporary -->
+            <div class="col-lg-3 col-md-4 filterDiv contemporary">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postKhabib" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Khabib Nurmagomedov</h5>
+                  <p class="small mb-0">Strength, humility, and faith in action inside and outside the cage.</p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Classical -->
+            <div class="col-lg-3 col-md-4 filterDiv classical">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postAhmad" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Imam Ahmad ibn Hanbal</h5>
+                  <p class="small mb-0">Stood firm in truth even when tortured for his beliefs.</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 filterDiv classical">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postShafi" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Imam Shafi‘i</h5>
+                  <p class="small mb-0">Brilliant mind and eloquent scholar of Islam.</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 filterDiv classical">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postAbuHanifa" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Imam Abu Hanifa</h5>
+                  <p class="small mb-0">Pioneer of Islamic jurisprudence with integrity and wisdom.</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 filterDiv classical">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postMalik" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Imam Malik</h5>
+                  <p class="small mb-0">Preserver of prophetic tradition and role model of character.</p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Other -->
+            <div class="col-lg-3 col-md-4 filterDiv other">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postMalcolm" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Malcolm X</h5>
+                  <p class="small mb-0">From rebellion to redemption — a journey of truth and faith.</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 filterDiv other">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postAli" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Muhammad Ali</h5>
+                  <p class="small mb-0">Unshaken by fame, firm in his beliefs — a fighter for justice.</p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Great Women -->
+            <div class="col-lg-3 col-md-4 filterDiv women">
+              <div class="gallery-item bg-light p-3 rounded shadow-sm h-100">
+                <a href="#postMaryam" class="glightbox2" data-glightbox="type: inline">
+                  <h5>Mary (Maryam)</h5>
+                  <p class="small mb-0">The embodiment of purity, devotion, and trust in God's plan.</p>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- /Starter Section Section -->
+
+  </main>
+
+    <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">TrueMen</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>This is a place where you can</br> learn about true manlihood</p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/TrueMen4Ever" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/truemen4ever/" target="_blank"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#departments">Role Models</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms of service</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy policy</a></li>
+          </ul>
+        </div>
+        <!-- Terms of Service Modal -->
+        <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="termsModalLabel">Terms of Service</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Welcome to <strong>TrueMen</strong>!</p>
+                <p>By accessing or using this website, you agree to comply with and be bound by the following terms and
+                  conditions. Please read them carefully before using the site.</p>
+
+                <h6>1. Purpose of the Website</h6>
+                <p>This website is designed to provide information and resources about true manhood, faith in God, and
+                  self-control as keys to overcoming addiction. Our content is for educational and inspirational
+                  purposes only.</p>
+
+                <h6>2. Use of Content</h6>
+                <p>All content on this site is the intellectual property of <strong>TrueMen</strong> unless otherwise
+                  stated. You may not reproduce, distribute, or republish materials without prior written permission.
+                </p>
+
+                <h6>3. User Conduct</h6>
+                <p>By using this website, you agree to engage respectfully with the content and community. Any form of
+                  harassment, hate speech, or harmful behavior is strictly prohibited.</p>
+
+                <h6>4. No Medical or Professional Advice</h6>
+                <p>The information provided here is not a substitute for professional medical, psychological, or legal
+                  advice. For addiction treatment, consult qualified professionals.</p>
+
+                <h6>5. Limitation of Liability</h6>
+                <p><strong>TrueMen</strong> is not liable for any damages arising from the use of this website or
+                  reliance on its content. Use the information at your own discretion.</p>
+
+                <h6>6. Changes to Terms</h6>
+                <p>We reserve the right to update these terms at any time. Changes will be posted here, and continued
+                  use of the site implies acceptance of new terms.</p>
+
+                <h6>7. Governing Law</h6>
+                <p>These terms are governed by the laws of the country where <strong>TrueMen</strong> operates.</p>
+
+                <p>If you have any questions regarding these Terms of Service, please contact us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Privacy Policy Modal -->
+        <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Your privacy matters to us at <strong>TrueMen</strong>. We are committed to protecting your personal
+                  information and being transparent about how we use it.</p>
+
+                <h6>1. Information We Collect</h6>
+                <p>We may collect personal information you provide voluntarily, such as your name and email address when
+                  you subscribe to newsletters or contact us.</p>
+
+                <h6>2. How We Use Information</h6>
+                <p>Your information is used solely to communicate with you, improve our services, and provide relevant
+                  content. We do not sell or rent your personal data to third parties.</p>
+
+                <h6>3. Cookies and Tracking</h6>
+                <p>Our website may use cookies to enhance user experience and analyze site traffic. You can manage
+                  cookie preferences through your browser settings.</p>
+
+                <h6>4. Data Security</h6>
+                <p>We take reasonable measures to protect your data from unauthorized access, but no internet
+                  transmission can be guaranteed 100% secure.</p>
+
+                <h6>5. Third-Party Links</h6>
+                <p>Our site may contain links to external websites. We are not responsible for the privacy practices or
+                  content of those sites.</p>
+
+                <h6>6. Your Rights</h6>
+                <p>You have the right to request access to, correction of, or deletion of your personal data. Contact us
+                  for any such requests.</p>
+
+                <h6>7. Changes to This Policy</h6>
+                <p>We may update this Privacy Policy occasionally. Changes will be posted here with an updated effective
+                  date.</p>
+
+                <p>If you have questions or concerns about your privacy, please contact us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="men.html">True Men</a></li>
+            <li><a href="faith.html">Faith</a></li>
+            <li><a href="discipline.html">Discipline</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Contact</h4>
+          <div class="footer-contact pt-3">
+            <p>Do not hessitate to contact us.</p>
+            <p class="mt-3"><strong></strong> <span></span></p><!---->
+            <p><strong>Email:</strong> <span>truemen4humanity@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Donate</h4>
+          <div>
+            <a href="https://www.paypal.com/donate?business=kimhalili99%40gmail.com" target="_blank" class="more-btn">
+              <span>Donate Now</span> <i class="bi bi-chevron-right"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">TrueMen</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    filterSelection("all");
+
+    function filterSelection(c) {
+      const items = document.getElementsByClassName("filterDiv");
+      if (c === "all") c = "";
+      for (let i = 0; i < items.length; i++) {
+        items[i].classList.remove("d-block");
+        items[i].classList.add("d-none");
+        if (items[i].className.indexOf(c) > -1) {
+          items[i].classList.remove("d-none");
+          items[i].classList.add("d-block");
+        }
+      }
+    }
+
+    // Handle active class
+    const btnContainer = document.getElementById("filterButtons");
+    const btns = btnContainer.getElementsByClassName("btn");
+    for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        const current = btnContainer.getElementsByClassName("active");
+        if (current.length > 0) current[0].classList.remove("active");
+        this.classList.add("active");
+      });
+    }
+
+    // Init GLightbox
+    GLightbox({ selector: '.glightbox2' });
+  </script>
+
+
+  // Initialize GLightbox for text
+  const lightbox = GLightbox({ selector: '.glightbox2' });
+  </script>
+
+  <!-- Inline Lightbox Content -->
+  <div id="postMuhammad" class="glightbox-content" style="display: none;">
+    <h2>Prophet Muhammad (ﷺ)</h2>
+    <p>Prophet Muhammad (peace be upon him) was the final messenger sent to mankind, the seal of prophethood, and the
+      greatest of creation. He was born in the harsh deserts of Arabia, orphaned at a young age, and raised among a
+      people who had long forgotten divine guidance. Yet, even before revelation, he was known as Al-Amin—the
+      Trustworthy—because of his impeccable character. When the call of prophethood came to him at the age of 40, he
+      bore the weight of revelation with grace and unmatched strength. He endured ridicule, persecution, starvation, and
+      personal loss, yet never wavered in his mission to call people to the worship of the One God.</p>
+    <p>His life was a beautiful blend of gentleness and firmness. As a military commander, he led with precision and
+      bravery, but never out of arrogance or cruelty. As a husband, he was loving and attentive, helping with housework
+      and treating his wives with deep respect. As a friend and companion, he remembered everyone’s name, visited the
+      sick, joked with the young, and honored the elderly. As a leader, he was just and transparent, never seeking power
+      but always serving with purpose. He forgave those who tried to kill him. He showed compassion to those who wronged
+      him. He cried in prayer during the night, begging God for mercy not just for himself, but for his entire ummah.
+    </p>
+    <p>To know Muhammad (ﷺ) is to know mercy, truth, and balance. He was never excessive in anything, but always guided
+      by revelation and wisdom. He left behind a legacy of spiritual enlightenment, moral excellence, and practical
+      guidance for every situation a human being may face. His example is eternal, and for every man who seeks to be
+      just, humble, brave, and spiritually anchored, the Prophet of Islam remains the ultimate model to follow.</p>
+  </div>
+
+  <div id="postIsa" class="glightbox-content" style="display: none;">
+    <h2>Jesus (Isa عليه السلام)</h2>
+    <p>Jesus, known as Isa in the Islamic tradition, was one of the most beloved and revered prophets sent by God. He
+      was born miraculously to the Virgin Maryam without a father, a sign of God's power and mercy. From birth, his life
+      was marked by divine grace. As a baby, he spoke in defense of his mother, proclaiming himself as a servant of God.
+      As a young man, he healed the blind and lepers by God's permission, raised the dead, and breathed life into clay
+      birds. But Isa's miracles were never for show—they were signs meant to guide hearts back to their Creator.</p>
+    <p>Jesus lived a life of complete detachment from worldly pleasures. He had no home, no wealth, and no political
+      position. He wandered from town to town, preaching love, repentance, and submission to the will of God. He
+      rejected materialism and arrogance, calling people instead to humility, compassion, and sincere worship. He spoke
+      truth to power, challenged the corrupt elites of his time, and stood firm in the face of opposition. His every
+      word was a reflection of divine wisdom. His every action was grounded in sincerity. He washed the feet of his
+      disciples, wept for the lost, and forgave even those who sought to harm him.</p>
+    <p>In Islam, Isa is not the son of God but one of the mightiest messengers, a pure soul created by God's word and
+      spirit. He did not die on the cross, but was raised up by God, and he will return before the end of time to
+      restore justice and truth. His legacy is one of radical love and unshakable faith. In a world obsessed with
+      dominance, Isa teaches the strength of surrender. In a culture fixated on pride, he teaches the beauty of
+      humility. He reminds us that greatness lies not in conquering others but in submitting to the One true God.</p>
+  </div>
+
+  <div id="postMusa" class="glightbox-content" style="display: none;">
+    <h2>Moses (Musa عليه السلام)</h2>
+    <p>Moses, or Musa in Arabic, is one of the most frequently mentioned prophets in the Qur’an. His story is one of
+      trials, transformation, and trust in God. Born at a time when Pharaoh was executing all newborn boys of the
+      Israelites, Musa's life began with danger. Yet through divine will, he was raised in the palace of his enemy,
+      trained in the very home of the tyrant he would one day confront. After accidentally killing a man, Musa fled into
+      exile, where he lived a life of solitude and reflection. It was in the wilderness that he received God's call from
+      the burning bush—an encounter that forever changed him.</p>
+    <p>With a stutter in his speech and a shepherd's staff in hand, Musa returned to Pharaoh not with soldiers, but with
+      signs. He stood in front of the most arrogant man on Earth and declared: "Let my people go." Musa's courage was
+      not rooted in ego, but in his absolute trust in God. He endured rejection by his own people, faced humiliation
+      from Pharaoh’s court, and performed miracle after miracle—all while remaining deeply connected to his Lord. He
+      split the sea by God’s command, led his people through it, and watched as Pharaoh was drowned.</p>
+    <p>But Musa's journey did not end with victory. He spent decades guiding a stubborn nation, often frustrated, yet
+      patient. He fasted for 40 nights to receive revelation. He begged to see God, and although he fainted at the
+      mountain’s quake, his longing remained unmatched. Musa was a warrior, a prophet, and a deeply emotional soul who
+      cried, pleaded, and persevered. He teaches us that manhood is not about perfection, but about persistence. That
+      leadership is not about dominance, but about service. And that the real battle is not against oppressors alone,
+      but also against despair and doubt within the heart.</p>
+  </div>
+
+  <div id="postIbrahim" class="glightbox-content" style="display: none;">
+    <h2>Abraham (Ibrahim عليه السلام)</h2>
+    <p>Ibrahim, known as Abraham in the Judeo-Christian tradition, is one of the greatest patriarchs in Islam, revered
+      for his unwavering faith and profound submission to God's will. From a young age, he challenged the idolatry and
+      falsehoods of his people, even standing against his own father in defense of monotheism. He questioned the stars,
+      the moon, the sun—rejecting each as a possible deity—until he declared his absolute devotion to the One who
+      created all. His story is one of courage, reason, and sacrifice.</p>
+    <p>When thrown into a blazing fire for his beliefs, Ibrahim did not waver, and God made the fire cool and safe for
+      him. He left behind all comfort and familiarity when commanded to migrate. He obeyed without hesitation when told
+      to leave his wife Hajar and infant son Ismail in the barren desert of Makkah. Perhaps most famously, when he saw
+      in a dream that he must sacrifice his beloved son, he moved forward in complete submission, only to be stopped by
+      divine mercy. These were not the acts of a blind follower, but of a heart in full surrender to the Divine.</p>
+    <p>Ibrahim’s title, Khalilullah—the Friend of God—is a reflection of his closeness to his Lord. His legacy lives on
+      in the rites of Hajj, in the call to prayer, and in the hearts of all believers who look to him as a model of pure
+      faith. He was a man who questioned, contemplated, obeyed, and sacrificed. His life is a timeless testimony that
+      true manhood begins with recognizing the Truth, standing by it, and being willing to give up everything for the
+      sake of God.</p>
+  </div>
+
+  <div id="postNuh" class="glightbox-content" style="display: none;">
+    <h2>Noah (Nuh عليه السلام)</h2>
+    <p>Noah, known as Nuh in the Qur’an, was a prophet of resilience, endurance, and unwavering commitment to truth.
+      Sent to a people deeply entrenched in idolatry and moral corruption, he preached the message of monotheism for 950
+      years. His voice echoed with patience as he called his people by day and night, in public and in private, urging
+      them to return to the worship of the One true God. Yet, only a few believed. He was mocked, ridiculed, and
+      scorned, but he remained steadfast—not for personal glory, but out of a sincere desire to save his people from
+      divine punishment.</p>
+    <p>Despite their rejection, Nuh never retaliated with anger or hatred. Instead, he built the ark with his own hands,
+      following God’s command, while enduring the laughter and insults of his people. His trust in God was absolute.
+      When the flood came, it was not just water that washed away the wicked—it was justice that reclaimed the Earth.
+      And even then, Nuh wept for his own son who was among the disbelievers, revealing the deep emotional burden he
+      carried. His story is not just about survival; it is about the pain of caring, the sorrow of rejection, and the
+      peace that comes with fulfilling your mission regardless of the outcome.</p>
+    <p>Nuh’s legacy is a lesson in perseverance, especially for those who feel isolated in their values. He reminds us
+      that truth is not validated by numbers, and sincerity is measured by sacrifice. A true man, like Nuh, holds firm
+      to his principles even when the world turns away.</p>
+  </div>
+
+  <div id="postAhmad" class="glightbox-content" style="display: none;">
+    <h2>Imam Ahmad ibn Hanbal</h2>
+    <p>Imam Ahmad ibn Hanbal was a mountain of patience and a beacon of unwavering conviction. Living in a time when
+      rulers tried to manipulate religious doctrine, he became the face of intellectual resistance during the Mihna
+      (inquisition). He was imprisoned, beaten, and tortured for refusing to say that the Qur’an was created—a stance
+      that upheld the purity of Islamic theology. Despite the excruciating pain and isolation, he did not give in. For
+      Imam Ahmad, truth was more valuable than comfort, and pleasing God was more important than surviving unscathed.
+    </p>
+    <p>He memorized hundreds of thousands of Hadiths and compiled the monumental Musnad of Imam Ahmad. But beyond
+      scholarship, his life was a masterclass in courage. He taught in secret, helped the poor, forgave those who harmed
+      him, and prayed long into the night. His humility was as profound as his knowledge. His silence under oppression
+      spoke louder than the shouts of his enemies, and his legacy lives on in every scholar who dares to stand for the
+      truth. Imam Ahmad showed that real strength isn’t in swords or titles—it’s in submission to Allah and the refusal
+      to compromise what’s right.</p>
+  </div>
+
+  <div id="postShafi" class="glightbox-content" style="display: none;">
+    <h2>Imam Shafi’i</h2>
+    <p>Imam Shafi’i was known for his eloquence, intelligence, and clarity of thought. A master of both language and
+      law, he laid down the foundations of Islamic legal theory with a brilliance that continues to illuminate minds
+      today. His sharp memory, poetic insight, and mastery of debate earned him widespread respect even from his
+      critics. He was humble in disagreement, firm in his principles, and always searching for the truth—not victory.
+    </p>
+    <p>Despite traveling and studying under various scholars, Imam Shafi’i remained grounded. He never allowed fame to
+      make him arrogant. His heart beat with love for the Sunnah and the Qur’an, and his devotion to seeking knowledge
+      was rivaled only by his devotion to God. He said, “If I speak the truth, follow me. If my companions speak the
+      truth, follow them.” This sincerity made him a man whose opinions shaped nations, but whose heart remained
+      anchored in servitude.</p>
+  </div>
+
+  <div id="postAbuHanifa" class="glightbox-content" style="display: none;">
+    <h2>Imam Abu Hanifa</h2>
+    <p>Imam Abu Hanifa was a giant in jurisprudence and a pioneer in applying reason within the bounds of revelation. A
+      successful merchant and an independent thinker, he used his wealth to support students of knowledge and his
+      intellect to build the most widely followed school of Islamic law. He was known not only for his legal brilliance
+      but also for his immense integrity. When pressured to take a political position he believed was unjust, he
+      refused—and was imprisoned and beaten for it.</p>
+    <p>He taught thousands of students and instilled in them the courage to think, reflect, and act with principle. He
+      combined intellect with piety, teaching that religion wasn’t just law—it was lived ethics, mercy, and justice.
+      Imam Abu Hanifa didn’t just build a school of thought—he built a culture of conscience.</p>
+  </div>
+
+  <div id="postMalik" class="glightbox-content" style="display: none;">
+    <h2>Imam Malik</h2>
+    <p>Imam Malik was the scholar of Madinah, the city of the Prophet (ﷺ), and he carried its light with dignity. Known
+      for his composure and reverence for Hadith, he compiled the "Muwatta," the first structured compilation of Islamic
+      law and prophetic tradition. His refusal to bow to political pressure—even when it risked his safety—earned him
+      the respect of scholars and leaders alike. When the ruling authorities tried to manipulate Islamic rulings for
+      political agendas, he resisted, even at the cost of being flogged in public.</p>
+    <p>Imam Malik lived by what he taught. He dressed cleanly, spoke carefully, and refused to narrate Hadith unless he
+      was in a state of wudu. He once said, “Knowledge is not knowing many reports, but a light that Allah places in the
+      heart.” His life was that light—calm, rooted, and radiant.</p>
+  </div>
+
+  <div id="postKhabib" class="glightbox-content" style="display: none;">
+    <h2>Khabib Nurmagomedov</h2>
+    <p>Khabib Nurmagomedov is more than a world champion in mixed martial arts—he is a living example of how discipline,
+      humility, and faith can coexist with greatness. Raised in the mountains of Dagestan, Khabib’s life was carved by
+      struggle and simplicity. Under the guidance of his father, Abdulmanap, he trained with intensity, not only to
+      conquer in the cage, but to conquer himself. He remained undefeated in his entire professional career—an
+      astonishing feat—but it is not just the record that makes Khabib respected around the world.</p>
+    <p>He never removed his identity to fit into the glitz of modern fame. Instead, he used the spotlight to speak about
+      his values, about faith, and about the respect a man owes his parents and elders. He prostrated in victory and
+      restrained himself in anger. He refused to let arrogance infect his heart, reminding the world that you can be
+      both a warrior and a worshipper. He once said, “You have to be humble. If you're not humble, you get humbled.”
+      That is the philosophy that protected him from the pride that destroys so many.</p>
+    <p>In a world hungry for role models, Khabib showed that real masculinity isn’t measured in aggression or
+      trophies—it’s in self-control, loyalty to family, and submission to Allah.</p>
+  </div>
+
+  <div id="postMalcolm" class="glightbox-content" style="display: none;">
+    <h2>Malcolm X</h2>
+    <p>Malcolm X was a man transformed by truth. From the pain of a broken childhood and the shadows of prison, he rose
+      with fiery conviction and a mind sharpened by relentless pursuit of justice. His voice, full of thunder and
+      clarity, spoke to the dignity of Black men and the need to confront injustice with unflinching courage. He did not
+      bow to fear, nor did he dilute his message to be more palatable. He spoke what was needed—even when it cost him
+      dearly.</p>
+    <p>But Malcolm’s greatest transformation came when he embraced the universal brotherhood of Islam. His pilgrimage to
+      Mecca opened his heart to the beauty of unity and the softness of divine love. From a militant activist to a
+      refined da’i, he evolved not by abandoning his principles, but by aligning them with the Qur’an and Sunnah. He
+      once said, “I am for truth, no matter who tells it. I’m for justice, no matter who it’s for or against.”</p>
+    <p>Malcolm X reminds us that masculinity is not stagnation—it is growth. It is the courage to change, the strength
+      to forgive, and the will to rise after every fall. He died with dignity, standing for what was right, and today he
+      lives on in every soul who refuses to be silent in the face of falsehood.</p>
+  </div>
+
+  <div id="postAli" class="glightbox-content" style="display: none;">
+    <h2>Muhammad Ali</h2>
+    <p>Muhammad Ali was not just a boxing legend; he was a man of faith, a poet of the people, and a warrior with a
+      heart. His fists moved fast, but his convictions moved faster. He refused to be drafted into war, stood up for
+      civil rights, and accepted being stripped of his title—all because he wouldn’t compromise his beliefs. “I don’t
+      have to be who you want me to be,” he once said. And he wasn’t.</p>
+    <p>Ali’s courage wasn’t just in the ring—it was in his refusal to be bought. In the face of ridicule and financial
+      loss, he held firm to Islam, to justice, and to being a servant of the truth. His confidence was infectious, yet
+      his humility before God was sincere. As Parkinson’s disease slowly took away his physical strength, his spiritual
+      strength grew. He spent his final years in service, charity, and prayer.</p>
+    <p>He showed the world that to be a man is not simply to fight, but to stand. To speak truth to power. To kneel in
+      prayer before your Lord even when the world praises you. Muhammad Ali wasn’t just the greatest in sports—he was
+      great in spirit.</p>
+  </div>
+
+  <div id="postMaryam" class="glightbox-content" style="display: none;">
+    <h2>Maryam (Mary عليها السلام)</h2>
+    <p>Maryam, the mother of Isa (Jesus), is the definition of honor, strength, and divine selection. Chosen by Allah
+      above all women, her story is one of purity, devotion, and trust in the unseen. As a young girl, she dedicated
+      herself to worship in the sanctuary, nourished by the miracles of her Lord. When the angel brought her the news of
+      a miraculous birth, her world turned—but her faith did not shake.</p>
+    <p>She endured the pain of pregnancy, the whispers of shame, and the loneliness of being misunderstood—all while
+      never once accusing her Lord of injustice. When she gave birth to Isa under a palm tree, her tears were met with
+      divine comfort: “Grieve not.” She stood before her people and remained silent, letting her newborn son speak on
+      her behalf. That moment alone is enough to show the majestic strength that Maryam carried in her heart.</p>
+    <p>She is proof that spiritual strength surpasses worldly strength. That honor lies not in wealth or position, but
+      in surrender to Allah. In a world that often reduces women to external value, Maryam stands as a timeless reminder
+      that true greatness comes from purity, patience, and proximity to God.</p>
+  </div>
+
+
+</body>
+
+</html>
