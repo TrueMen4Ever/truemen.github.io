@@ -1750,6 +1750,20 @@ section,
   display: block !important;
 }
 
+/* Smooth fade for Bootstrap modals (in and out) */
+.modal.fade .modal-dialog {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
 
 
 
