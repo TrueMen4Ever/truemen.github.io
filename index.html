@@ -419,22 +419,23 @@
 
 <!-- === MOBILE ACCORDION SECTION (kept separate) === -->
 <section id="departments-mobile" class="departments section" aria-label="Role Models - Mobile">
-        <!-- Section Title -->
+  <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Role Models</h2>
-    <p>These men are the peak of mascullinity.</p>
-  </div><!-- End Section Title -->
+    <p>These men are the peak of masculinity.</p>
+  </div>
+  <!-- End Section Title -->
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="accordion" id="roleModelsAccordion">
 
       <!-- Muhammad -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingMuhammad">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMuhammad" aria-expanded="true" aria-controls="collapseMuhammad">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMuhammad" aria-expanded="false" aria-controls="collapseMuhammad">
             Muhammad
           </button>
         </h2>
-        <div id="collapseMuhammad" class="accordion-collapse collapse show" aria-labelledby="headingMuhammad" data-bs-parent="#roleModelsAccordion">
+        <div id="collapseMuhammad" class="accordion-collapse collapse" aria-labelledby="headingMuhammad">
           <div class="accordion-body">
             <h3>Prophet Muhammad (Peace be upon him)</h3>
             <p class="fst-italic">"The strong man is the one who controls himself when angry" (Al-Bukhari, Hadith 6114).</p>
@@ -456,7 +457,7 @@
             Jesus
           </button>
         </h2>
-        <div id="collapseJesus" class="accordion-collapse collapse" aria-labelledby="headingJesus" data-bs-parent="#roleModelsAccordion">
+        <div id="collapseJesus" class="accordion-collapse collapse" aria-labelledby="headingJesus">
           <div class="accordion-body">
             <h3>Prophet Jesus (Peace be upon him)</h3>
             <p class="fst-italic">"Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet" (Qur’an 19:30).</p>
@@ -478,7 +479,7 @@
             Moses
           </button>
         </h2>
-        <div id="collapseMoses" class="accordion-collapse collapse" aria-labelledby="headingMoses" data-bs-parent="#roleModelsAccordion">
+        <div id="collapseMoses" class="accordion-collapse collapse" aria-labelledby="headingMoses">
           <div class="accordion-body">
             <h3>Prophet Moses (Peace be upon him)</h3>
             <p class="fst-italic">"O my Lord, expand for me my chest and ease my task for me" (Qur’an 20:25–26).</p>
@@ -500,7 +501,7 @@
             Abraham
           </button>
         </h2>
-        <div id="collapseAbraham" class="accordion-collapse collapse" aria-labelledby="headingAbraham" data-bs-parent="#roleModelsAccordion">
+        <div id="collapseAbraham" class="accordion-collapse collapse" aria-labelledby="headingAbraham">
           <div class="accordion-body">
             <h3>Prophet Abraham (Peace be upon him)</h3>
             <p class="fst-italic">"Indeed, I have turned my face toward Him who created the heavens and the earth, inclining toward truth" (Qur’an 3:67).</p>
@@ -522,7 +523,7 @@
             Noah
           </button>
         </h2>
-        <div id="collapseNoah" class="accordion-collapse collapse" aria-labelledby="headingNoah" data-bs-parent="#roleModelsAccordion">
+        <div id="collapseNoah" class="accordion-collapse collapse" aria-labelledby="headingNoah">
           <div class="accordion-body">
             <h3>Prophet Noah (Peace be upon him)</h3>
             <p class="fst-italic">"O my people, I am to you a clear warner" (Qur’an 11:25).</p>
@@ -541,7 +542,7 @@
   </div>
 </section>
 
-<!-- === RESPONSIVE CSS (keeps the desktop HTML unchanged while swapping to accordion on small screens) === -->
+<!-- === RESPONSIVE CSS === -->
 <style>
   /* default: hide mobile section to avoid flash if CSS loads late */
   #departments-mobile { display: none; }
@@ -550,10 +551,12 @@
   @media (max-width: 991.98px) {
     #departments { display: none !important; }
     #departments-mobile { display: block !important; }
+
     /* optional small tweaks for accordion spacing */
     #departments-mobile .accordion-button {
       font-size: 1.05rem;
     }
+
     #departments-mobile .accordion-body {
       background: transparent;
       border-radius: 6px;
@@ -566,6 +569,7 @@
     #departments-mobile { display: none !important; }
   }
 </style>
+
 
     <section id="blog" class="faq section light-background">
 
