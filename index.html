@@ -542,6 +542,17 @@
   </div>
 </section>
 
+<!-- === JS FIX: allow each to toggle independently === -->
+<script>
+  document.querySelectorAll('#roleModelsAccordion .accordion-button').forEach(button => {
+    button.addEventListener('click', function () {
+      const collapse = document.querySelector(this.getAttribute('data-bs-target'));
+      const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapse);
+      bsCollapse.toggle();
+    });
+  });
+</script>
+
 <!-- === RESPONSIVE CSS === -->
 <style>
   /* default: hide mobile section to avoid flash if CSS loads late */
@@ -569,6 +580,7 @@
     #departments-mobile { display: none !important; }
   }
 </style>
+
 
 
     <section id="blog" class="faq section light-background">
