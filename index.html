@@ -254,7 +254,7 @@
 
 
 <!-- === KEEPING YOUR ORIGINAL DESKTOP SECTION 100% THE SAME === -->
-<!-- Departments Section -->
+<!-- Departments Section (unchanged for desktop) -->
 <section id="departments" class="departments section">
 
   <!-- Section Title -->
@@ -417,7 +417,7 @@
 </section><!-- /Departments Section -->
 
 
-<!-- === MOBILE ACCORDION SECTION (kept separate) === -->
+<!-- === MOBILE ACCORDION SECTION (fixed) === -->
 <section id="departments-mobile" class="departments section" aria-label="Role Models - Mobile">
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
@@ -431,11 +431,12 @@
       <!-- Muhammad -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingMuhammad">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMuhammad" aria-expanded="true" aria-controls="collapseMuhammad">
+          <!-- NOTE: start CLOSED so user can open and also close later -->
+          <button class="accordion-button collapsed" type="button" data-bs-target="#collapseMuhammad" aria-expanded="false" aria-controls="collapseMuhammad">
             Muhammad
           </button>
         </h2>
-        <div id="collapseMuhammad" class="accordion-collapse collapse show" aria-labelledby="headingMuhammad" data-bs-parent="#roleModelsAccordion">
+        <div id="collapseMuhammad" class="accordion-collapse collapse" aria-labelledby="headingMuhammad">
           <div class="accordion-body">
             <h3>Prophet Muhammad (Peace be upon him)</h3>
             <p class="fst-italic">"The strong man is the one who controls himself when angry" (Al-Bukhari, Hadith 6114).</p>
@@ -453,11 +454,11 @@
       <!-- Jesus -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingJesus">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJesus" aria-expanded="false" aria-controls="collapseJesus">
+          <button class="accordion-button collapsed" type="button" data-bs-target="#collapseJesus" aria-expanded="false" aria-controls="collapseJesus">
             Jesus
           </button>
         </h2>
-        <div id="collapseJesus" class="accordion-collapse collapse" aria-labelledby="headingJesus" data-bs-parent="#roleModelsAccordion">
+        <div id="collapseJesus" class="accordion-collapse collapse" aria-labelledby="headingJesus">
           <div class="accordion-body">
             <h3>Prophet Jesus (Peace be upon him)</h3>
             <p class="fst-italic">"Indeed, I am the servant of Allah. He has given me the Scripture and made me a prophet" (Qur'an 19:30).</p>
@@ -475,11 +476,11 @@
       <!-- Moses -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingMoses">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMoses" aria-expanded="false" aria-controls="collapseMoses">
+          <button class="accordion-button collapsed" type="button" data-bs-target="#collapseMoses" aria-expanded="false" aria-controls="collapseMoses">
             Moses
           </button>
         </h2>
-        <div id="collapseMoses" class="accordion-collapse collapse" aria-labelledby="headingMoses" data-bs-parent="#roleModelsAccordion">
+        <div id="collapseMoses" class="accordion-collapse collapse" aria-labelledby="headingMoses">
           <div class="accordion-body">
             <h3>Prophet Moses (Peace be upon him)</h3>
             <p class="fst-italic">"O my Lord, expand for me my chest and ease my task for me" (Qur'an 20:25–26).</p>
@@ -497,11 +498,11 @@
       <!-- Abraham -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingAbraham">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbraham" aria-expanded="false" aria-controls="collapseAbraham">
+          <button class="accordion-button collapsed" type="button" data-bs-target="#collapseAbraham" aria-expanded="false" aria-controls="collapseAbraham">
             Abraham
           </button>
         </h2>
-        <div id="collapseAbraham" class="accordion-collapse collapse" aria-labelledby="headingAbraham" data-bs-parent="#roleModelsAccordion">
+        <div id="collapseAbraham" class="accordion-collapse collapse" aria-labelledby="headingAbraham">
           <div class="accordion-body">
             <h3>Prophet Abraham (Peace be upon him)</h3>
             <p class="fst-italic">"Indeed, I have turned my face toward Him who created the heavens and the earth, inclining toward truth" (Qur'an 3:67).</p>
@@ -519,11 +520,11 @@
       <!-- Noah -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingNoah">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNoah" aria-expanded="false" aria-controls="collapseNoah">
+          <button class="accordion-button collapsed" type="button" data-bs-target="#collapseNoah" aria-expanded="false" aria-controls="collapseNoah">
             Noah
           </button>
         </h2>
-        <div id="collapseNoah" class="accordion-collapse collapse" aria-labelledby="headingNoah" data-bs-parent="#roleModelsAccordion">
+        <div id="collapseNoah" class="accordion-collapse collapse" aria-labelledby="headingNoah">
           <div class="accordion-body">
             <h3>Prophet Noah (Peace be upon him)</h3>
             <p class="fst-italic">"O my people, I am to you a clear warner" (Qur'an 11:25).</p>
@@ -542,7 +543,7 @@
   </div>
 </section>
 
-<!-- === RESPONSIVE CSS === -->
+<!-- === RESPONSIVE CSS (updated) === -->
 <style>
   /* default: hide mobile section to avoid flash if CSS loads late */
   #departments-mobile { display: none; }
@@ -555,12 +556,25 @@
     /* optional small tweaks for accordion spacing */
     #departments-mobile .accordion-button {
       font-size: 1.05rem;
+      cursor: pointer;
+    }
+
+    /* we control animation by max-height transitions on the collapse element */
+    .accordion-collapse.collapse {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 250ms ease;
+    }
+    .accordion-collapse.collapse.show {
+      /* max-height gets set inline by JS to scrollHeight so this is a fallback */
+      transition: max-height 250ms ease;
     }
 
     #departments-mobile .accordion-body {
       background: transparent;
       border-radius: 6px;
       margin-bottom: 10px;
+      padding: 0.75rem 1rem;
     }
   }
 
@@ -568,19 +582,85 @@
   @media (min-width: 992px) {
     #departments-mobile { display: none !important; }
   }
-
-  document.querySelectorAll('#roleModelsAccordion .accordion-button').forEach(btn => {
-  btn.addEventListener('click', function(e) {
-    let target = document.querySelector(this.dataset.bsTarget);
-
-    // If it's already open, toggle it closed
-    if (target.classList.contains('show')) {
-      e.preventDefault();
-      target.classList.remove('show');
-    }
-  });
-});
 </style>
+
+<!-- === Collapse JS: independent, allow closing last one, smooth animation === -->
+<script>
+(function() {
+  // Helper: open a collapse element (smoothly)
+  function openCollapse(el) {
+    el.classList.add('show'); // for styling and aria
+    // remove inline max-height then set to scrollHeight so transition works
+    el.style.maxHeight = el.scrollHeight + 'px';
+  }
+
+  // Helper: close a collapse element (smoothly)
+  function closeCollapse(el) {
+    // set maxHeight to current height to kickstart transition
+    el.style.maxHeight = el.scrollHeight + 'px';
+    // then in next frame set to 0 so it animates
+    requestAnimationFrame(() => {
+      el.style.maxHeight = '0px';
+    });
+    // remove 'show' after transition ends (we'll listen once)
+    function onTransitionEnd(e) {
+      if (e.target !== el) return;
+      el.classList.remove('show');
+      el.removeEventListener('transitionend', onTransitionEnd);
+    }
+    el.addEventListener('transitionend', onTransitionEnd);
+  }
+
+  // Initialize: ensure all collapse elements start closed and have no inline maxHeight
+  document.querySelectorAll('#departments-mobile .accordion-collapse').forEach(c => {
+    c.classList.remove('show');
+    c.style.maxHeight = '0px';
+  });
+
+  // Attach click handlers to toggles (buttons)
+  document.querySelectorAll('#departments-mobile .accordion-button').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      var targetSelector = btn.getAttribute('data-bs-target') || btn.dataset.bsTarget;
+      if (!targetSelector) return;
+      var target = document.querySelector(targetSelector);
+      if (!target) return;
+
+      var isOpen = target.classList.contains('show');
+
+      if (isOpen) {
+        // close it
+        closeCollapse(target);
+        btn.classList.add('collapsed');
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        // open it
+        openCollapse(target);
+        btn.classList.remove('collapsed');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // Keep max-height synced on window resize (so open elements keep correct height)
+  window.addEventListener('resize', function() {
+    document.querySelectorAll('#departments-mobile .accordion-collapse.show').forEach(el => {
+      el.style.maxHeight = el.scrollHeight + 'px';
+    });
+  });
+
+  // Optional: if you want keyboard accessibility (Enter/Space toggles)
+  document.querySelectorAll('#departments-mobile .accordion-button').forEach(btn => {
+    btn.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        btn.click();
+      }
+    });
+  });
+
+})();
+</script>
+
 
 
 
