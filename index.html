@@ -568,6 +568,18 @@
   @media (min-width: 992px) {
     #departments-mobile { display: none !important; }
   }
+
+  document.querySelectorAll('#roleModelsAccordion .accordion-button').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    let target = document.querySelector(this.dataset.bsTarget);
+
+    // If it's already open, toggle it closed
+    if (target.classList.contains('show')) {
+      e.preventDefault();
+      target.classList.remove('show');
+    }
+  });
+});
 </style>
 
 
