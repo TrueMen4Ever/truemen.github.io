@@ -1762,9 +1762,13 @@ section,
   opacity: 1;
 }
 
-.modal-body p {
-  font-weight: normal;
+.modal-body, 
+.modal-body p, 
+.modal-body li, 
+.modal-body h6 {
+  font-weight: normal !important;
 }
+
 
 
 
